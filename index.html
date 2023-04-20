@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+<title>drop-down-buttons</title>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+body{
+display:flex;
+justify-content:center;
+height:100vh;
+align-items:center;
+gap:300px;
+}
+.items{
+width:150px;
+font-size:18px;
+font-family:sans-serif;
+border-radius:5px;
+overflow:hidden;
+}
+.items li a{
+text-align:center;
+display:inline-block;
+width:150px;
+text-decoration:none;
+color:white;
+background-color:#0D6EFD;
+padding:10px;
+}
+.items li{
+list-style-type:none;
+}
+.main_container{
+position:relative;
+}
+.items li a:hover{
+background-color:rgb(13, 110, 253,0.6);
+}
+
+.Dropdown{
+position:absolute;
+left:150px;
+bottom:112px;
+border-radius:5px;
+overflow:hidden;
+display:none;
+}
+.main_container .items li:nth-child(3):hover .Dropdown{
+display:block;
+}
+.main_container .items li:nth-child(6):hover .Dropdown-2{
+display:block;
+}
+
+.main_container .items li:nth-child(7):hover .Dropdown-3{
+display:block;
+}
+.main_container .items li:nth-child(8):hover .Dropdown-4{
+display:block;
+}
+.Dropdown-2{
+position:absolute;
+left:150px;
+top:214px;
+border-radius:5px;
+overflow:hidden;
+display:none;
+}
+
+.Dropdown-3{
+position:absolute;
+left:150px;
+top:260px;
+border-radius:5px;
+overflow:hidden;
+display:none;
+}
+.Dropdown-4{
+position:absolute;
+left:150px;
+top:311px;
+border-radius:5px;
+overflow:hidden;
+display:none;
+}
+
+.container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.container-2{
+position:relative;
+}
+.items-2{
+display:flex;
+list-style-type:none;
+border-radius:5px;
+overflow:hidden;
+width:216px;
+}
+
+.items-2 li a{
+display:inline-block;
+text-decoration:none;
+font-family:sans-serif;
+padding:10px 15px;
+font-size:15px;
+background-color:#0D6EFD;
+color:white;
+height:38px;
+}
+.items-2 li a:hover{
+background-color:rgb(13, 110, 253,0.8);
+}
+.dropdown-5{
+list-style-type:none;
+border-radius:5px;
+overflow:hidden;
+position:absolute;
+}
+.dropdown-5 li{
+border-radius:5px;
+
+}
+.dropdown-5 li a{
+width:140px;
+}
+ #icon{
+width:140px; 
+height:38px;
+padding-left:20px;
+
+ }
+img{
+width:10px;
+height:10px;
+margin-left:10px;
+}
+.dropdown-5{
+display:none;
+}
+.container-2 .items-2 li:nth-child(3):hover .dropdown-5{
+display:block;
+}
+</style>
+<body>
+<div class="main_container">
+<ul class="items">
+<li><a href="#">Button</a></li>
+<li><a href="#">Button</a></li>
+<li><a href="#">Dropdown <span class="material-symbols-outlined">
+arrow_drop_down
+</span></a>
+<ul class="Dropdown">
+<li><a href="#">Primary </a></li>
+<li><a href="#">Secondary</a></li>
+<li><a href="#">Warning</a></li>
+<li><a href="#">light</a></li>
+</ul>
+</li>
+<li><a href="#">Button</a></li>
+<li><a href="#">Button</a></li>
+<li><a href="#">Dropdown <span class="material-symbols-outlined">
+arrow_drop_down
+</span></a>
+<ul class="Dropdown-2">
+<li><a href="#">Primary </a></li>
+<li><a href="#">Secondary</a></li>
+<li><a href="#">Warning</a></li>
+<li><a href="#">light</a></li>
+</ul>
+</li>
+<li><a href="#">Dropdown <span class="material-symbols-outlined">
+arrow_drop_down
+</span></a>
+<ul class="Dropdown-3">
+<li><a href="#">Primary </a></li>
+<li><a href="#">Secondary</a></li>
+<li><a href="#">Warning</a></li>
+<li><a href="#">light</a></li>
+</ul>
+</li>
+<li><a href="#">Dropdown <span class="material-symbols-outlined">
+arrow_drop_down
+</span></a>
+<ul class="Dropdown-4">
+<li><a href="#">Primary </a></li>
+<li><a href="#">Secondary</a></li>
+<li><a href="#">Warning</a></li>
+<li><a href="#">light</a></li>
+</ul>
+</li>
+</li>
+</ul>
+</div>
+<div class="container-2">
+<ul class="items-2">
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#" id="icon">Dropdown <img src="images/down.png" alt="img"> </a>
+<ul class="dropdown-5">
+<li><a href="#">Primary </a></li>
+<li><a href="#">Secondary</a></li>
+<li><a href="#">Warning</a></li>
+<li><a href="#">light</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</html>
